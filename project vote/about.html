@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+  <head>
+      <meta charset = "UTF-8">
+      <meta http-equiv = "X-UA-Compatible" content = "IE=edge,chrome=1">
+      <meta name = "viewport" content = "width = device-width , initial-scale = 1.0">
+      <link rel = "stylesheet" type = "text/css" href = "./css/style.css">
+      <link rel = "stylesheet" href = "./css/about.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+      <link rel="stylesheet" href="https://static.fontawesome.com/css/fontawesome-app.css">
+      <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.2.0/css/all.css">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <title> VOTER-ABOUT </title>
+  </head>
+  <body>
+    <header>
+      <nav>
+
+        <div class = "logo">
+          <a href = "./home.html">
+            <img src = "./image/logo.png" alt = "logo" >
+          </a>
+        </div>
+
+        <div class = "menu"> 
+          <ul>
+            <li><a href = "./home.html"> HOME </a></li>
+            <li><a href = "./about.html"> ABOUT </a></li>
+            <li><a href = "./voterlogin.jsp"> LOGIN </a></li>
+            <li><a href = "./voterregister.jsp"> REGISTER </a></li>
+          </ul>
+        </div>
+
+      </nav>
+    </header>
+     
+    <div class="options">
+      <div class="option active" style="--optionBackground:url(https://www.nap.edu/openbook/25120/xhtml/images/img-52-1.jpg);">
+         <div class="shadow"></div>
+         <div class="label">
+            <div class="icon">
+               <i class="fas fa-walking"></i>
+            </div>
+            <div class="info">
+               <div class="main">ELECTION PROCESS</div>
+               <div class="sub">follow the process!!!!!</div>
+            </div>
+         </div>
+      </div>
+      <div class="option" style="--optionBackground:url(https://www.todayonline.com/sites/default/files/20200618_sw_gecampaignrules-1.jpg);">
+         <div class="shadow"></div>
+         <div class="label">
+            <div class="icon">
+               <i class="fas fa-snowflake"></i>
+            </div>
+            <div class="info">
+               <div class="main">CAMPAINING RULES</div>
+               <div class="sub">candidates must follow!!!!!</div>
+            </div>
+         </div>
+      </div>
+      <div class="option" style="--optionBackground:url(https://www.varnumlaw.com/assets/htmlimages/Images_Blogs/2019-12-16-NLRB-Election-Rules.jpg);">
+         <div class="shadow"></div>
+         <div class="label">
+            <div class="icon">
+               <i class="fas fa-tree"></i>
+            </div>
+            <div class="info">
+               <div class="main">PETITION FORM</div>
+               <div class="sub"> feel free to contact us!!!!!</div>
+            </div>
+         </div>
+      </div>
+      <div class="option" style="--optionBackground:url(https://storage.googleapis.com/afs-prod/media/14ab77c8667b4d8db72c97987884353d/3000.jpeg);">
+         <div class="shadow"></div>
+         <div class="label">
+            <div class="icon">
+               <i class="fas fa-tint"></i>
+            </div>
+            <div class="info">
+               <div class="main">PRIME MEMBERS</div>
+               <div class="sub">voters are our first concern!!!!!</div>
+            </div>
+         </div>
+      </div>
+      <div class="option" style="--optionBackground:url(https://www.ledgerinsights.com/wp-content/uploads/2020/11/e-voting-810x524.jpg);">
+         <div class="shadow"></div>
+         <div class="label">
+            <div class="icon">
+               <i class="fas fa-sun"></i>
+            </div>
+            <div class="info">
+               <div class="main">E-ELECTION</div>
+               <div class="sub">stay safe and do your duty as a citizen!!!!!</div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <h1><a href="https://legislative.gov.in/sites/default/files/%282%29%20THE%20CONDUCT%20OF%20ELECTION%20RULES%2C%201961.pdf" target="_blank" rel="noopener noreferrer">CLICK HERE TO SEE THE RULES AND REGULATIONS AS PER INDIAN GOVERNMENT</a></h1>
+      <footer>
+
+        <div class = "logo">
+          <a href = "./adminlogin.jsp">
+            <img src = "./image/logo.png" alt = "logo" >
+        </a>
+        </div>
+
+        <div class = "addr">   
+          <h3> ADDRESS </h3>
+          <p> MIT Rd, Radha Nagar, Chromepet, Chennai, Tamil Nadu 600044 </p>
+        </div>
+
+        <div class = "ph">  
+          <h3> PHONE </h3>
+          <P> 044 2251 6002 </P>
+        </div>
+      </footer>
+<script>
+  $(".option").click(function(){
+   $(".option").removeClass("active");
+   $(this).addClass("active");
+});
+</script>
+  </body>
+</html>

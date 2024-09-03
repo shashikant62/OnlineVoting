@@ -1,0 +1,353 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+}
+#logout{
+  border: none;
+  background: none;
+  color: white;
+  margin-top: -3px;
+  border: 1px solid transparent;
+  padding: 5px 20px;
+  transition: 1s ease;
+  -webkit-transition: 1s ease;
+  -moz-transition: 1s ease;
+  -ms-transition: 1s ease;
+  -o-transition: 1s ease;
+  font-size: medium;
+}
+.menu ul li button{
+  border: none;
+  background: none;
+  color: white;
+  margin-top: -3px;
+  border: 1px solid transparent;
+  padding: 5px 20px;
+  transition: 1s ease;
+  -webkit-transition: 1s ease;
+  -moz-transition: 1s ease;
+  -ms-transition: 1s ease;
+  -o-transition: 1s ease;
+  font-size: medium;
+}
+#logout:hover {
+  background-color: white;
+  color: black;
+}
+.menu ul li button:hover {
+  background-color: white;
+  color: black;
+}
+.voterinfo {
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  height: 25%;
+  width: 5%;
+  top: 10%;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: black;
+  overflow-x: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding-top: 40px;
+  font-size: larger;
+  text-align: left;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  z-index: 1;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#btn button {
+  position: fixed;
+  left: 48%;
+  top: 50%;
+  border: none;
+  color: white;
+  font-size: larger;
+  padding: 1.5% 1%;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  z-index: 1;
+  background-color: red;
+}
+
+#btn img {
+  position: fixed;
+  top: 15%;
+  left: 47%;
+}
+.elecinfo {
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.3)));
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+  position:static;
+  margin-top: 5%;
+  margin-right: 70%;
+  margin-left: 2%;
+  font-size: x-large;
+  padding: 1%;
+  width: 30%;
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+  overflow: visible;
+}
+
+.candidinfo {
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.3)));
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+  position: fixed;
+  top: 30%;
+  left: 30%;
+  font-size: x-large;
+}
+#form {
+  position: absolute;
+  top: 3%;
+  left: 30%;
+  font-size: x-large;
+  background-color : lightyellow ;
+  padding : 1% ;
+  border-radius : 1rem;
+  display: none;
+}
+
+body h1 {
+  position: fixed;
+  top: 1%;
+  left: 45%;
+}
+.elecinfo h3{
+  font-size: 25px;
+  color: red;
+}
+.elecinfo table{
+  color: firebrick;
+  font-size: large;
+}
+.addcad{
+  background: darkslategray;
+  width: 45%;
+  height: fit-content;
+  top: 15%;
+  position: fixed;
+  padding: 2%;
+  border-radius: 2rem;
+  left: 50%;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+}
+.addcad h3{
+  font-size: x-large;
+  text-align: center;
+  color: floralwhite;
+}
+.addcad form{
+  text-align: left;
+}
+.addcad form label{
+  color: ghostwhite;
+  font-size: x-large;
+}
+.addcad form input{
+  font-size: larger;
+  padding: 0.2%;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+.addcad form button{
+  border: none;
+  padding: 0.2%;
+  right:10%;
+  position:inherit;
+  color: red;
+  background: wheat;
+}
+.result button, button::after {
+    width: 380px;
+    height: 86px;
+    font-size: 36px;
+    font-family: 'Bebas Neue', cursive;
+    background: linear-gradient(45deg, transparent 5%, #FF013C 5%);
+    border: 0;
+    color: #fff;
+    letter-spacing: 3px;
+    line-height: 88px;
+    box-shadow: 6px 0px 0px #00E6F6;
+    outline: transparent;
+    position: fixed;
+    top: 50%;
+    left: 60%;
+  }
+  
+ .result button::after {
+    --slice-0: inset(50% 50% 50% 50%);
+    --slice-1: inset(80% -6px 0 0);
+    --slice-2: inset(50% -6px 30% 0);
+    --slice-3: inset(10% -6px 85% 0);
+    --slice-4: inset(40% -6px 43% 0);
+    --slice-5: inset(80% -6px 5% 0);
+    content: 'AVAILABLE NOW';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #FF013C 5%);
+    text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+    clip-path: var(--slice-0);
+  }
+  
+ .result button:hover::after {
+    animation: 1s glitch;
+    animation-timing-function: steps(2, end);
+  }
+  
+  @keyframes glitch {
+    0% {
+      clip-path: var(--slice-1);
+      transform: translate(-20px, -10px);
+    }
+    10% {
+      clip-path: var(--slice-3);
+      transform: translate(10px, 10px);
+    }
+    20% {
+      clip-path: var(--slice-1);
+      transform: translate(-10px, 10px);
+    }
+    30% {
+      clip-path: var(--slice-3);
+      transform: translate(0px, 5px);
+    }
+    40% {
+      clip-path: var(--slice-2);
+      transform: translate(-5px, 0px);
+    }
+    50% {
+      clip-path: var(--slice-3);
+      transform: translate(5px, 0px);
+    }
+    60% {
+      clip-path: var(--slice-4);
+      transform: translate(5px, 10px);
+    }
+    70% {
+      clip-path: var(--slice-2);
+      transform: translate(-10px, 10px);
+    }
+    80% {
+      clip-path: var(--slice-5);
+      transform: translate(20px, -10px);
+    }
+    90% {
+      clip-path: var(--slice-1);
+      transform: translate(-10px, 0px);
+    }
+    100% {
+      clip-path: var(--slice-1);
+      transform: translate(0);
+    }
+  }
+  @import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+  body .container {
+    max-width: 100vw;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 35px;
+    margin: 0 auto;
+    padding: 40px 0;
+  }
+  body .container .card {
+    float : left ;
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin-left: 15%;
+    margin-top : 5% ;
+    background-color : Black ;
+    border-radius: 15px;
+    box-shadow: 0 15px 60px rgba(0, 0, 0, 0.5);
+  }
+  body .container .card .face {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body .container .card .face.face1 {
+    box-sizing: border-box;
+    color : Gold ;
+    padding: 20px;
+  }
+  body .container .card .face.face1 h2 {
+    margin: 0;
+    padding: 0;
+    font-size: large;
+    font-weight: 600;
+  }
+  body .container .card .face.face1 .info {
+    background-color: #fffc00;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  body .container .card .face.face2 {
+    color: White;
+    font-size: 20px ;
+    transition: 0.5s infinite;
+    -webkit-transition: 0.5s infinite;
+    -moz-transition: 0.5s infinite;
+    -ms-transition: 0.5s infinite;
+    -o-transition: 0.5s infinite;
+}
+  body .container .card .face.face2 h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 10em;
+    transition: 0.5s;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+  }
+  body .container .card:hover .face.face2 {
+    height: 60px;
+  }
+  body .container .card:hover .face.face2 h2 {
+    font-size: 2em;
+  }
+  body .container .card:nth-child(odd) .face.face2 {
+    background-image: linear-gradient(40deg, #fffc00 0%, #fc00ff 45%, #00fffc 100%);
+    border-radius: 15px;
+  }
+  body .container .card:nth-child(even) .face.face2 {
+    background-image: linear-gradient(40deg, #fc00ff 0%, #00fffc 45%, #fffc00 100%);
+    border-radius: 15px;
+  }
